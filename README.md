@@ -2,6 +2,10 @@
 
 A minimal menu bar countdown timer. Click the menu bar item, type a time, press Return. The time counts down right in the menu bar.
 
+<p><img src="docs/running.png" width="300" alt="Tick's popover with a 25 minute focus timer running"> <img src="docs/typing.png" width="300" alt="Typing a time into Tick"></p>
+
+<img src="docs/alarm.png" width="330" alt="Tick's alarm card with +5m and Stop">
+
 - Type `5`, `25m focus`, `1h30`, `1:30`, `90s`, `3pm` or `at 15:30`. Words after the time become the timer's label.
 - Preset chips (1 min – 1 h) and your recent custom timers.
 - **⌃⌥T** opens Tick from anywhere (or stops a ringing alarm). ⌥-click the menu bar item repeats the last timer. Right-click for the menu.
