@@ -19,15 +19,22 @@ macOS 26 or later. No other software needed.
 
 ## Install
 
+**Download:** get [Tick.zip](https://github.com/byaydenrx/Tick/releases/latest/download/Tick.zip) from the [latest release](https://github.com/byaydenrx/Tick/releases/latest) (Apple silicon and Intel, macOS 26 or later).
+
+1. Double-click `Tick.zip` to unzip it, and drag **Tick** into your Applications folder.
+2. Open it. Because the app isn't notarized by Apple, macOS says it can't verify it: click **Done**.
+3. Open System Settings › Privacy & Security, scroll down to “Tick was blocked”, click **Open Anyway** and confirm. You only do this once.
+4. Tick's hourglass appears in the menu bar. It turns on Open at Login the first time it runs.
+
+**Or build it yourself** (no Gatekeeper prompt), with Swift 6 from the Xcode Command Line Tools (`xcode-select --install`) or Xcode:
+
 ```sh
-git clone https://github.com/Byaydenrx/Tick.git
+git clone https://github.com/byaydenrx/Tick.git
 cd Tick
 ./install.sh
 ```
 
-`install.sh` builds Tick from source, copies it to `~/Applications` and opens it. To only build: `./build.sh` makes `build/Tick.app` (universal: Apple silicon and Intel). Either needs Swift 6 from the Xcode Command Line Tools (`xcode-select --install`) or Xcode.
-
-Downloaded builds aren't notarized, so macOS blocks them the first time: System Settings › Privacy & Security › **Open Anyway**. Building it yourself avoids that.
+`install.sh` builds Tick, copies it to `~/Applications` and opens it. `./build.sh` only builds `build/Tick.app`.
 
 ## Data
 
